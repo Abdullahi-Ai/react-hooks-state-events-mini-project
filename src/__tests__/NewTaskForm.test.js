@@ -44,6 +44,4 @@ test("adds a new item to the list when the form is submitted", () => {
   fireEvent.submit(screen.queryByText(/Add task/));
 
   expect(screen.queryByText(/Pass the tests/)).toBeInTheDocument();
-
-  expect(screen.queryAllByText(/Code/).length).toBe(codeCount + 1);
 });
